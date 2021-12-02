@@ -1,0 +1,25 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  
+  p {
+    width: 100%;
+    color: white;
+    animation: floatText 10s linear infinite;
+    position: absolute;
+    white-space: nowrap;
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes floatText {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: -150%;
+  }
+}

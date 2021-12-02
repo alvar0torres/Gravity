@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
 .header {
     height: 6rem;
     color: white;
@@ -5,8 +7,10 @@
     width: 100%;
 
     h1 {
-        font-size: 3rem;
+        font-size: 5rem;
         justify-self: center;
+        color: #ffc107;
+        font-family: 'Goldman', cursive;
     }
 }
 

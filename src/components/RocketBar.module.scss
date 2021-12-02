@@ -1,0 +1,61 @@
+.container {
+  margin-top: 12rem;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid white;
+  padding: 2px;
+}
+
+.progress {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #ffc107;
+  animation: fill-bar 2.5s linear;
+  animation-delay: 0.4s;
+
+  @media (max-width: 60rem) {
+    animation-delay: 0.8;
+  }
+
+  @media (max-width: 40rem) {
+    animation-delay: 0.9;
+  }
+
+  @media (max-width: 35rem) {
+    animation-delay: 0.95;
+  }
+
+  @media (max-width: 30rem) {
+    animation-delay: 1s;
+  }
+}
+
+.image {
+  transform: scale(0.5);
+  position: absolute;
+  animation: rocket-progress 5s linear;
+}
+
+@keyframes rocket-progress {
+  from {
+    right: 100%;
+  }
+
+  to {
+    right: -100%;
+  }
+}
+
+@keyframes fill-bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}

@@ -1,11 +1,59 @@
 .glass{
-    height: 40rem;
-    width: 40rem;
-    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    height: 20rem;
+    margin: 7rem auto;
     background: linear-gradient(135deg, rgba(97, 95, 95, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(1px);
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 0.5rem;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+    align-self: center;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+    color: white;
+    justify-self: center;
+    align-self: center;
+
+    label {
+        margin-right: 0.5rem;
+    }
+
+    input {
+        padding-left: 0.5rem;
+        height: 1.5rem;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 2px;
+        color: white;
+    }
+
+    button {
+        height: 1.5rem;
+        color: white;
+        background-color: transparent;
+        border-style: none;
+        border: 1px solid white;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #ffc107;
+            color: black;
+        }
+    }
 }
