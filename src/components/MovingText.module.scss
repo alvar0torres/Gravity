@@ -7,19 +7,103 @@
   p {
     width: 100%;
     color: white;
-    animation: floatText 10s linear infinite;
+    animation: floatText100 10s linear infinite;
     position: absolute;
     white-space: nowrap;
     font-size: 1.5rem;
+
+    @media (max-width: 45rem) {
+      animation: floatText50 10s linear infinite;
+    }
+
+    @media (max-width: 38rem) {
+      animation: floatText25 10s linear infinite;
+    }
+
+    @media (max-width: 35rem) {
+      animation: floatText20 10s linear infinite;
+    }
+
+    @media (max-width: 35rem) {
+      animation: floatText15 10s linear infinite;
+    }
+
+    @media (max-width: 35rem) {
+      animation: floatText10 10s linear infinite;
+    }
+
+    @media (max-width: 35rem) {
+      animation: floatText5 10s linear infinite;
+    }
   }
 }
 
-@keyframes floatText {
+@keyframes floatText100 {
   from {
     left: 100%;
   }
 
   to {
     left: -150%;
+  }
+}
+
+@keyframes floatText50 {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: -180%;
+  }
+}
+
+@keyframes floatText25 {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: -200%;
+  }
+}
+
+@keyframes floatText20 {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: -230%;
+  }
+}
+
+@keyframes floatText15 {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: -300%;
+  }
+}
+
+@keyframes floatText10 {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: -350%;
+  }
+}
+
+@keyframes floatText5 {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: -390%;
   }
 }
