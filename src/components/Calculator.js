@@ -6,7 +6,14 @@ const Calculator = (props) => {
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
+    props.setIsHomePage(false);
     props.setIsSubmitted(true);
+
+
+    setTimeout(() => {
+      props.setIsSubmitted(false);
+      props.setIsLoaded(true);
+    }, 3500);
   };
 
 
@@ -17,7 +24,7 @@ const Calculator = (props) => {
       <form onSubmit={onSubmitHandler} className={styles.form}>
         <label htmlFor="weight">Enter your weight here: </label>
         <input id="weight" type="float" />
-        <button>SUBMIT</button>
+        <button>CALCULATE</button>
       </form>
     </div>
   );

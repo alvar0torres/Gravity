@@ -3,7 +3,7 @@
     grid-template-columns: 1fr;
     
     height: 20rem;
-    margin: 7rem auto;
+    // margin: 9rem 0;
     background: linear-gradient(135deg, rgba(97, 95, 95, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(1px);
@@ -43,17 +43,27 @@ h1 {
     }
 
     button {
-        height: 1.5rem;
+        height: 3rem;
         color: white;
-        background-color: transparent;
+        background: repeating-linear-gradient(
+        315deg,
+        #ffc107,
+        #ffc107 10px,
+        black 10px,
+        black 20px
+      );
         border-style: none;
         border: 1px solid white;
         font-weight: bold;
+        font-family: 'Goldman', cursive;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-size: 1.25rem;
         cursor: pointer;
 
         &:hover {
-            background-color: #ffc107;
-            color: black;
+            background: black;
+            color: #ffc107;
+            border-color: #ffc107;
         }
     }
 }

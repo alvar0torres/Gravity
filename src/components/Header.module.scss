@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
 
 .header {
+    padding-top: 2rem;
     height: 6rem;
     color: white;
     display: grid;
     width: 100%;
+
+    @media (max-width: 40rem) {
+        margin-top: 0;
+    }
 
     h1 {
         font-size: 5rem;
         justify-self: center;
         color: #ffc107;
         font-family: 'Goldman', cursive;
+
+        @media (max-width: 40rem) {
+            font-size: 3.5rem;
+        }
     }
 }
 

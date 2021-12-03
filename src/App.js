@@ -1,17 +1,37 @@
 import Header from "./components/Header";
 import Calculator from "./components/Calculator";
 import RocketBar from "./components/RocketBar";
+import Planets from "./components/Planets";
+import Footer from "./components/Footer";
 import { useState } from "react";
 
+import styles from "./App.module.scss";
+
 function App() {
+  const [isHomePage, setIsHomePage] = useState(true);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   return (
-    <div>
+    <section className={styles["whole-page"]}>
       <Header />
-      {!isSubmitted && <Calculator setIsSubmitted={setIsSubmitted}/>}
+      {isHomePage && (
+        <Calculator
+          setIsSubmitted={setIsSubmitted}
+          setIsLoaded={setIsLoaded}
+          setIsHomePage={setIsHomePage}
+        />
+      )}
       {isSubmitted && <RocketBar />}
-    </div>
+      {isLoaded && (
+        <Planets
+          setIsSubmitted={setIsSubmitted}
+          setIsLoaded={setIsLoaded}
+          setIsHomePage={setIsHomePage}
+        />
+      )}
+      <Footer />
+    </section>
   );
 }
 
