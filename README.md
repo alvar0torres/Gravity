@@ -1,4 +1,4 @@
-# Gravity :milky_way:
+# Gravity (With Tests) :milky_way:
 
 Calculate how much  you would weight on other planets of the Solar System.
 
@@ -12,6 +12,7 @@ https://gravity-react.vercel.app/
 * CSS/SCSS
 * JavaScript
 * React
+* React testing library
 
 ## Functionalities/Features
 
@@ -29,6 +30,10 @@ https://gravity-react.vercel.app/
     * Earth
       
 * Full responsive design.
+
+* Tests: I have tested the following (tests are in App.test.js):
+    *Tested that calculations are correct for every single planet
+    *Tested that error message is displayed if not a valid number is entered in the input
 
 ## How to run it locally
 

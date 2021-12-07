@@ -34,7 +34,7 @@ const Calculator = (props) => {
       <MovingText />
       <form onSubmit={onSubmitHandler} className={styles.form}>
         <label htmlFor="weight">Enter your weight here (kg): </label>
-        <input ref={weight} id="weight" type="float" />
+        <input data-testid="weight-input" ref={weight} id="weight" type="float" />
         {error && <div className={styles.error}>Please, enter a valid number.</div>}
         <button type="submit">CALCULATE</button>
       </form>
